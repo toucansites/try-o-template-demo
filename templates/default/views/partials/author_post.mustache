@@ -1,0 +1,31 @@
+<div class="author-post-card">
+
+    <div class="author-posts-grid">
+
+        <a href="{{permalink}}" target="">
+            <img src="{{image}}">
+        </a>
+
+        <div class="author-data">
+
+            <div class="author-post-meta">
+
+                <time datetime="{{publication.iso8601}}">
+                    {{publication.date.medium}}
+                </time>
+                |
+                {{#authors}}
+                    <a href="{{permalink}}">{{title}}</a>
+                {{/authors}}
+            
+            </div>
+
+            <div class="author-post-title">
+                <a href="{{permalink}}" target="">{{title}} </a>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>

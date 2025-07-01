@@ -1,0 +1,24 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <h1>All authors</h1>
+
+    {{& page.contents.html}}
+
+    {{#empty(context.authors)}}
+    Empty.
+    {{/empty(context.authors)}}
+    {{^empty(context.authors)}}
+    <div class="authors-list-grid">
+    {{#context.authors}}
+        {{> partials.author}}
+    {{/context.authors}}
+    </div>
+    {{/empty(context.authors)}}
+
+</div>
+
+{{/main}}
+{{/html}}

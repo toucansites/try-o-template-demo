@@ -1,0 +1,6 @@
+name: HighlightedText
+tag: div
+attributes:
+  - name: class
+    value: highlighted-text
+content: true

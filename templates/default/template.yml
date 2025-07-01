@@ -1,0 +1,18 @@
+name: "try-o template"
+description: "The first template for the Toucan static site generator."
+version: "1.0.0-beta.2"
+generatorVersions:
+    - "1.0.0-beta.5"
+
+authors:
+    - name: "Binary Birds Kft."
+      url: "https://binarybirds.com/"
+
+license:
+    name: "MIT license"
+    url: "https://github.com/toucansites/minimal-template?tab=MIT-1-ov-file"
+
+tags:
+    - "binarybirds"
+    - "try-o"
+    - "template"

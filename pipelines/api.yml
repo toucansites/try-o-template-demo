@@ -1,0 +1,33 @@
+id: api
+definesType: true
+
+assets:
+    properties:
+        - action: set
+          property: image
+          resolvePath: true
+          input:
+                name: "cover" 
+                ext: "*"
+
+queries: 
+    posts:
+        contentType: post
+        scope: detail
+        orderBy:
+            - key: publication
+              direction: desc
+
+contentTypes:
+    include:
+        - api
+
+engine: 
+    id: json
+    options:
+        keyPath: "context.posts"
+
+output:
+    path: "api"
+    file: posts
+    ext: json

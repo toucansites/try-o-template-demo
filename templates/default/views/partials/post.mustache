@@ -1,0 +1,19 @@
+<div class="post-card">
+    
+    <a href="{{permalink}}" target="">
+        <img src="{{image}}" alt="{{title}}">
+    </a>
+
+    <div class="post-meta">
+        <time datetime= "{{publication.iso8601}}">
+            {{publication.date.medium}}
+        </time>
+        |
+        {{#authors}} <a href="{{permalink}}">{{title}}</a>{{/authors}}
+    </div>
+
+    <div class="post-title">
+        <a href="{{permalink}}" target="">{{title}} </a>
+    </div>
+    
+</div>

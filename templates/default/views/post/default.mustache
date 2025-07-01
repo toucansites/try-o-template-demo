@@ -1,0 +1,79 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <div class="article-class">
+        <article>
+
+            <div class="post-meta">
+                <time datetime="{{page.publication.iso8601}}">
+                    {{page.publication.date.medium}}
+                </time>
+                |
+                {{#page.authors}}
+                <a href="{{permalink}}">{{title}}</a>
+                {{/page.authors}}
+            </div>
+            
+            {{& page.contents.html}}
+
+            </br>
+                
+            <h4>TAGS</h4> 
+            <div class="tag-list">
+                {{#page.tags}}
+                    <a href="{{permalink}}"><small>{{title}}</small></a>
+                {{/page.tags}}
+            </div>
+
+            <h4>SHARE VIA</h4> 
+            {{#page.permalink}}
+                {{> partials.share}}
+            {{/page.permalink}}
+
+            <section>
+                <div class="grid grid-2">
+                    {{^page.prev}}
+                    <div></div>
+                    {{/page.prev}}
+                    {{#page.prev}}
+                    <div class="prev">
+                        <h4>&larr; Prev post</h4>
+                        <a href="{{permalink}}">{{title}}</a>
+                    </div>
+                    {{/page.prev}}
+                        
+                    {{^page.next}}
+                    <div></div>
+                    {{/page.next}}
+                    {{#page.next}}
+                    <div class="next">
+                        <h4 style="text-align: right;">Next post &rarr;</h4>
+                        <a href="{{permalink}}">{{title}}</a>
+                    </div>
+                    {{/page.next}}
+                </div>
+            </section>
+                        
+        </article>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <h4>RELATED POSTS</h4>    
+    {{#empty(page.related)}}
+    No related posts.
+    {{/empty(page.related)}}
+    {{^empty(page.related)}}
+    <div class="grid grid-221">
+        {{#page.related}}
+            {{> partials.post}}
+        {{/page.related}}
+        </div>
+    {{/empty(page.related)}}
+    
+</div>
+
+{{/main}}
+{{/html}}

@@ -1,0 +1,26 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <h1>Search</h1>
+
+    {{& page.contents.html}}
+
+    <p class="hiddenText" id="baseUrlValue">{{baseUrl}}</p>
+
+    {{#empty(context.posts)}}
+    Empty.
+    {{/empty(context.posts)}}
+    {{^empty(context.posts)}}
+    <div style="visibility: hidden;" id="search-list" class="author-grid">
+        {{#context.posts}}
+            {{> partials.author_post}}
+        {{/context.posts}}
+    </div>
+    {{/empty(context.posts)}}
+
+</div>
+
+{{/main}}
+{{/html}}

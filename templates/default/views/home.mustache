@@ -1,0 +1,33 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <section id="blog">
+
+        {{#empty(context.posts)}}
+        {{/empty(context.posts)}}
+        {{^empty(context.posts)}}
+        <div class="grid grid-321">
+        {{#context.posts}}
+            {{> partials.post}}
+        {{/context.posts}}
+        </div>
+        {{/empty(context.posts)}}
+
+        {{#empty(iterator.links)}}
+        {{/empty(iterator.links)}}
+        {{^empty(iterator.links)}}
+            <div class="pagination">
+            {{#iterator.links}}
+                {{> partials.pagination}}
+            {{/iterator.links}}
+            </div>
+        {{/empty(iterator.links)}}
+
+    </section>
+
+</div>
+
+{{/main}}
+{{/html}}

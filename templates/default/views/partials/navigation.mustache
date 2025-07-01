@@ -1,0 +1,47 @@
+<div id="navigation-container">
+    <header id="navigation" class="wrapper">
+        <a href="{{baseUrl}}/">
+            <picture>
+                <source
+                    srcset="{{baseUrl}}/images/logos/logo~dark.png"
+                    media="(prefers-color-scheme: dark)"
+                    >
+                <img
+                    src="{{baseUrl}}/images/logos/logo.png"
+                    alt="Logo of {{site.name}}"
+                    title="{{site.name}}"
+                    >
+            </picture>
+        </a>
+        <nav>
+                <input type="checkbox" id="primary-menu-button" name="menu-button" class="menu-button">
+                <label for="primary-menu-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </label>
+
+                <div class="menu-items">
+
+                    {{#site.navigation}}
+                    <a href="{{baseUrl}}{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+                    {{/site.navigation}}
+
+                    <div class="search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M4.49688 8.59959C4.49688 6.00385 6.60114 3.89959 9.19688 3.89959C11.7926 3.89959 13.8969 6.00385 13.8969 8.59959C13.8969 11.1953 11.7926 13.2996 9.19688 13.2996C6.60114 13.2996 4.49688 11.1953 4.49688 8.59959ZM9.19688 2.09958C5.60702 2.09958 2.69687 5.00973 2.69687 8.59959C2.69687 12.1894 5.60702 15.0996 9.19688 15.0996C10.4608 15.0996 11.6407 14.7387 12.6389 14.1144L16.5605 18.036C16.912 18.3875 17.4818 18.3875 17.8333 18.036C18.1847 17.6845 18.1847 17.1147 17.8333 16.7632L14.0234 12.9533C15.0635 11.801 15.6969 10.2742 15.6969 8.59959C15.6969 5.00973 12.7867 2.09958 9.19688 2.09958Z"
+                                stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+
+                        <form id="searchForm">
+                            <input type="text" id="searchValue" placeholder="Search..."/>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+    </header>
+</div>

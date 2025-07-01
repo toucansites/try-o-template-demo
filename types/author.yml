@@ -1,0 +1,35 @@
+id: author
+paths:
+    - authors
+
+properties:
+    priority:
+        type: int
+        required: true
+    x:
+        type: string
+        required: false
+    linkedin:
+        type: string
+        required: false
+    facebook:
+        type: bool
+        required: false
+    instagram:
+        type: bool
+        required: false
+    tiktok:
+        type: bool
+        required: false
+
+queries:
+    posts:
+        contentType: post
+        scope: detail
+        filter:
+            key: authors
+            operator: contains
+            value: "{{id}}"
+        orderBy:
+            - key: publication
+              direction: desc

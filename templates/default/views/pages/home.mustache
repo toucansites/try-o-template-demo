@@ -1,0 +1,45 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    {{& page.contents.html}}
+
+    <h1>Featured posts</h1>
+
+    {{#empty(context.featured)}}
+    No featured posts yet.
+    {{/empty(context.featured)}}
+    {{^empty(context.featured)}}
+    <div class="grid grid-221">
+        {{#context.featured}}
+        {{> partials.post}}
+        {{/context.featured}}
+    </div>
+    {{/empty(context.featured)}}
+
+    <div class="section-divider"></div>
+
+    <h4>Most recents posts</h4>
+
+    {{#empty(context.recent)}}
+    No recent posts yet.
+    {{/empty(context.recent)}}
+    {{^empty(context.recent)}}
+    <div class="grid grid-221">
+        {{#context.recent}}
+        {{> partials.post}}
+        {{/context.recent}}
+    </div>
+    {{/empty(context.recent)}}
+
+    <div class="more-centered">
+        <a class="all-post-button" href="{{baseUrl}}/posts/page/1">All posts</a>
+    </div>
+    
+</div>
+
+{{/main}}
+{{/html}}
+
+

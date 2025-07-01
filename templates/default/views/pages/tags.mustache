@@ -1,0 +1,25 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper">
+
+    <h1>All tags</h1>
+
+    {{& page.contents.html}}
+
+    {{#empty(context.tags)}}
+    Empty.
+    {{/empty(context.tags)}}
+    {{^empty(context.tags)}}
+    <div class="grid grid-421">
+    {{#context.tags}}
+        {{> partials.tag}}
+    {{/context.tags}}
+    
+    </div>
+    {{/empty(context.tags)}}
+
+</div>
+
+{{/main}}
+{{/html}}
