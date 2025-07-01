@@ -5,6 +5,8 @@ on:
     tags:
       - 'v*'
       - '[0-9]*'
+    branches:
+      - 'release/*'
 
 jobs:
   deploy-page:
