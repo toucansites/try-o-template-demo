@@ -4,4 +4,4 @@ targets:
     
     - name: live
       output: /tmp/output
-      url: "https://toucansites.github.io/try-o/"
+      url: "https://toucansites.github.io/try-o-template-demo/"
