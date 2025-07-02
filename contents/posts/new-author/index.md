@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Authors allow you to attribute content to specific contributors, enhancing credibility and providing additional context for your website. Follow these steps to add a new author in **Try-O-Theme**.
+Authors allow you to attribute content to specific contributors, enhancing credibility and providing additional context for your website. Follow these steps to add a new author in **Try-O-Template**.
 
 ---
 
@@ -119,8 +119,8 @@ After creating the author, you need to regenerate your site to apply the changes
     ```
 
 - **Styling Author Profiles**:
-  - To customize the author display, modify the relevant Mustache template in the **themes/default/templates/** directory.
+  - To customize the author display, modify the relevant Mustache file in the **templates/default/views/** directory.
 
 ---
 
-This guide ensures you can easily add and manage authors in **Try-O-Theme**.
+This guide ensures you can easily add and manage authors in **Try-O-Template**.

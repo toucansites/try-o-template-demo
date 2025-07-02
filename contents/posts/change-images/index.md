@@ -1,7 +1,7 @@
 ---
 type: post
 title: Change Images
-description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O-Theme.
+description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O-Template.
 publication: 2025-03-02 00:00:01
 tags:
   - content
@@ -14,13 +14,13 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Learn how to change images, including the site logo, the favicon, cover images, post images, author images, and general Markdown images in Try-O-Theme.
+Learn how to change images, including the site logo, the favicon, cover images, post images, author images, and general Markdown images in Try-O-Template.
 
 ---
 
 ## Understanding Image Locations
 
-Different types of images in **Try-O-Theme** are stored in different directories:  
+Different types of images in **Try-O-Template** are stored in different directories:  
 
 - **Site Logo**: Located in **assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
 - **Post Images**: Stored in **contents/post-name/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
@@ -54,7 +54,7 @@ Different types of images in **Try-O-Theme** are stored in different directories
 
 ## Changing the Favicon
 
-Favicons are the small icons that appear in browser tabs and bookmarks. To update the favicon in Try-O-Theme:
+Favicons are the small icons that appear in browser tabs and bookmarks. To update the favicon in Try-O-Template:
 
 1. Navigate to the favicon directory:
 
@@ -173,4 +173,4 @@ Markdown allows you to embed images directly within your content. You can add im
 
 ---
 
-This guide ensures you can **easily update any image** in **Try-O-Theme**! 🚀
+This guide ensures you can **easily update any image** in **Try-O-Template**! 🚀

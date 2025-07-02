@@ -22,9 +22,9 @@ featured: true
 
 ## Introduction
 
-Thank you for purchasing Try-O-Theme! This theme is built on our very own, soaring Toucan static site generator, which uses Markdown for content creation and Mustache templates for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
+Thank you for purchasing Try-O-Template! This template is built on our very own, soaring Toucan static site generator, which uses Markdown for content creation and Mustache files for layout and design. Together, these tools make it easy to add, edit, and manage your site’s content while maintaining a visually appealing and professional design.
 
-With Markdown, you can write formatted text in plain-text files, which Toucan converts into HTML. Mustache templates allow you to customize the layout and presentation of your site with clean, readable syntax. Together, they give you full control over both the content and appearance of your site.
+With Markdown, you can write formatted text in plain-text files, which Toucan converts into HTML. Mustache files allow you to customize the layout and presentation of your site with clean, readable syntax. Together, they give you full control over both the content and appearance of your site.
 
 This guide will walk you through essential tasks, such as changing the site logo, adding new content (tags, authors, posts), and customizing your site’s pages and footer. It also covers Markdown basics and provides instructions for deploying your site to GitHub Pages, ensuring a smooth publishing process.
 
@@ -38,7 +38,7 @@ Easily customize your site’s content by following these guides:
 - [Add a new post](/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
 - [Create a custom page in navigation](/new-navigation): Add static pages, like “About” or “Contact Us,” and include them in the navigation menu.
 - [Customize the footer](/change-footer): Update your site’s footer with social links, copyright information, and custom text.
-- [Theme Tweaks](/theme-tweaks): Tweak your theme by changing the theme colours or add block directives.
+- [Template Tweaks](/template-tweaks): Tweak your template by changing the template colours or add block directives.
 
 Each guide is designed to provide step-by-step instructions to make the customization process seamless.
 
@@ -61,13 +61,13 @@ This guide ensures you can easily manage updates and publish changes to your sit
 
 ## Closing Notes
 
-Thank you again for choosing Try-O-Theme! If you have any questions or need further assistance, feel free to:
+Thank you again for choosing Try-O-Template! If you have any questions or need further assistance, feel free to:
 
 - [Contact](https://toucansites.com/contact/) us directly.
 - Check the Toucan [documentation](https://toucansites.com/docs/) for more detailed developer guidance.
 - Explore the examples provided in this guide.
 
 ## Give a star on Github 🙏
-I'm sure you know, how much it means to an online service provider to more ratings on Github. Give us a star and watch us if you like Toucan and TRY-O theme. Thank you!
+I'm sure you know, how much it means to an online service provider to more ratings on Github. Give us a star and watch us if you like Toucan and TRY-O template. Thank you!
 
 [Toucan on Github](https://github.com/toucansites/toucan)
