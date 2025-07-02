@@ -66,7 +66,9 @@ Adding a custom page is a great way to enhance your site’s functionality by in
    title: "Contact Us"
    description: "Get in touch with us through this page."
    image: /images/contact-us-header.jpg
-   template: pages.default_page
+   views: 
+      html:
+         pages.default_page
    ---
    ```
 
@@ -97,12 +99,13 @@ City, Country 12345
 ## Step 5: Create a New Template (Optional)
 
 1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache template:
-   - Navigate to **themes/default/templates/pages/**.
+   - Navigate to **templates/default/views/pages/**.
    - Create a new Mustache file, e.g., **contact_page.mustache**.
-2. Update the **template** field in the custom page's metadata to use your new template:
+2. Update the **views** field in the custom page's metadata to use your new template:
 
    ```markdown
-   template: pages.contact_page
+   views: 
+      html: pages.contact_page
    ```
 
 ---
@@ -140,8 +143,8 @@ Once the custom page is created, regenerate the site to apply the changes:
 - **Updating Content**:
   - You can edit the **index.md** file at any time to update the content of the custom page.
 - **Styling**:
-  - Update the relevant Mustache templates and CSS files in the **themes/default/** directory to customize the page's look.
+  - Update the relevant Mustache templates and CSS files in the **templates/default/** directory to customize the page's look.
 
 ---
 
-This guide ensures you can create and manage custom pages with ease in **Try-O-Theme**.
+This guide ensures you can create and manage custom pages with ease in **Try-O**.

@@ -101,8 +101,8 @@ Once the tag is created, regenerate your site to apply the changes:
     ```
 
 - **Styling Tags**:
-  - To customize how tags are displayed, modify the relevant Mustache template in the **themes/default/templates/** directory.
+  - To customize how tags are displayed, modify the relevant Mustache template in the **templates/default/views/** directory.
 
 ---
 
-This guide ensures you can easily add and manage tags in **Try-O-Theme**.
+This guide ensures you can easily add and manage tags in **Try-O**.

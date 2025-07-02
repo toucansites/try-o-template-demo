@@ -1,6 +1,6 @@
-name: "My site"
+name: "Try-O Template Demo"
 language: "en-US"
-description: "Description for my site"
+description: "Try-O is a customizable static site template for Toucan."
 navigation:
     - label: "About"
       url: "/about/"
