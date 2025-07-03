@@ -1,11 +1,7 @@
 ---
 type: post
 title: Change Images
-<<<<<<< HEAD
 description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O Template.
-=======
-description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O-Template.
->>>>>>> main
 publication: 2025-03-02 00:00:01
 tags:
   - content
@@ -18,21 +14,13 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-<<<<<<< HEAD
 Learn how to change images, including the site logo, the favicon, cover images, post images, author images, and general Markdown images in Try-O Template.
-=======
-Learn how to change images, including the site logo, the favicon, cover images, post images, author images, and general Markdown images in Try-O-Template.
->>>>>>> main
 
 ---
 
 ## Understanding Image Locations
 
-<<<<<<< HEAD
 Different types of images are stored in different directories:  
-=======
-Different types of images in **Try-O-Template** are stored in different directories:  
->>>>>>> main
 
 - **Site Logo**: Located in **assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
 - **Post Images**: Stored in **contents/<slug>/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
@@ -66,11 +54,7 @@ Different types of images in **Try-O-Template** are stored in different director
 
 ## Changing the Favicon
 
-<<<<<<< HEAD
 Favicons are the small icons that appear in browser tabs and bookmarks. To update the favicon in Try-O:
-=======
-Favicons are the small icons that appear in browser tabs and bookmarks. To update the favicon in Try-O-Template:
->>>>>>> main
 
 1. Navigate to the favicon directory:
 
@@ -189,8 +173,4 @@ Markdown allows you to embed images directly within your content. You can add im
 
 ---
 
-<<<<<<< HEAD
 This guide ensures you can **easily update any image** in **Try-O**! 🚀
-=======
-This guide ensures you can **easily update any image** in **Try-O-Template**! 🚀
->>>>>>> main

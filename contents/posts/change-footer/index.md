@@ -14,11 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-<<<<<<< HEAD
 The footer is an important section of your website, often used to display additional navigation, social media links, or copyright information. Follow these steps to customize the footer in **Try-O**.
-=======
-The footer is an important section of your website, often used to display additional navigation, social media links, or copyright information. Follow these steps to customize the footer in **Try-O-Template**.
->>>>>>> main
 
 ---
 
@@ -138,8 +134,4 @@ After updating the footer content or styles, regenerate the site to apply the ch
 
 ---
 
-<<<<<<< HEAD
 This guide ensures you can easily customize and manage your footer content in **Try-O**.
-=======
-This guide ensures you can easily customize and manage your footer content in **Try-O-Template**.
->>>>>>> main

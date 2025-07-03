@@ -97,23 +97,14 @@ City, Country 12345
 
 ## Step 5: Create a New Template (Optional)
 
-<<<<<<< HEAD
-1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache template:
-=======
 1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache file:
->>>>>>> main
    - Navigate to **templates/default/views/pages/**.
    - Create a new Mustache file, e.g., **contact_page.mustache**.
 2. Update the **views** field in the custom page's metadata to use your new template:
 
    ```markdown
-<<<<<<< HEAD
    views: 
       html: pages.contact_page
-=======
-   views:
-    html: pages.contact_page
->>>>>>> main
    ```
 
 ---
@@ -155,8 +146,4 @@ Once the custom page is created, regenerate the site to apply the changes:
 
 ---
 
-<<<<<<< HEAD
 This guide ensures you can create and manage custom pages with ease in **Try-O**.
-=======
-This guide ensures you can create and manage custom pages with ease in **Try-O-Template**.
->>>>>>> main
