@@ -17,7 +17,7 @@ featured: true
 ## Disclaimer
 
 @HighlightedText {
-  Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. TRY-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+  Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. The Try-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
 }
 
 ## Introduction

@@ -105,4 +105,4 @@ Once the tag is created, regenerate your site to apply the changes:
 
 ---
 
-This guide ensures you can easily add and manage tags in **Try-O-Template**.
+This guide ensures you can easily add and manage tags in **Try-O**.

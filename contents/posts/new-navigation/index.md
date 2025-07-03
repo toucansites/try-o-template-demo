@@ -67,7 +67,7 @@ Adding a custom page is a great way to enhance your site’s functionality by in
    description: "Get in touch with us through this page."
    image: /images/contact-us-header.jpg
    views:
-    html: pages.default_page
+      html: pages.default_page
    ---
    ```
 
@@ -103,8 +103,8 @@ City, Country 12345
 2. Update the **views** field in the custom page's metadata to use your new template:
 
    ```markdown
-   views:
-    html: pages.contact_page
+   views: 
+      html: pages.contact_page
    ```
 
 ---
@@ -146,4 +146,4 @@ Once the custom page is created, regenerate the site to apply the changes:
 
 ---
 
-This guide ensures you can create and manage custom pages with ease in **Try-O-Template**.
+This guide ensures you can create and manage custom pages with ease in **Try-O**.
