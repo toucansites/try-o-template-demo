@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Adding new posts is essential to keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Theme**.
+Adding new posts is essential to keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Template**.
 
 ---
 
@@ -167,4 +167,4 @@ Once the post is created, regenerate your site to apply the changes:
 
 ---
 
-This guide ensures you can easily create and manage posts in **Try-O-Theme**.
+This guide ensures you can easily create and manage posts in **Try-O-Template**.

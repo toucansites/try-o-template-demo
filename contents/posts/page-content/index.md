@@ -1,7 +1,7 @@
 ---
 type: post
 title: Adding Extra Content
-description: Learn how to add custom content to different pages in Try-O-Theme using Markdown and frontmatter in index.md files.
+description: Learn how to add custom content to different pages in Try-O-Template using Markdown and frontmatter in index.md files.
 publication: 2025-03-07 00:00:01
 tags:
   - content
@@ -14,13 +14,13 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-In **Try-O-Theme**, you can add extra content to your pages using **Markdown** inside index.md files. This guide will show you how to structure your content and use custom fields.
+In **Try-O-Template**, you can add extra content to your pages using **Markdown** inside index.md files. This guide will show you how to structure your content and use custom fields.
 
 ---
 
-## 1. Understanding How Pages Work in Try-O-Theme
+## 1. Understanding How Pages Work in Try-O-Template
 
-All the page content in **Try-O-Theme** is defined inside the **contents/** directory.  
+All the page content in **Try-O-Template** is defined inside the **contents/** directory.  
 Common pages include:  
 
 - Homepage → **contents/[home]index.md**  
@@ -76,7 +76,7 @@ Below the frontmatter, you can write **Markdown content**, which will be **autom
 ```markdown
 # Welcome to Our Site  
 
-We are passionate about creating high-quality static sites using **Try-O-Theme**.  
+We are passionate about creating high-quality static sites using **Try-O-Template**.  
 
 ## Our Values  
 - 🚀 Innovation  
@@ -98,5 +98,5 @@ All this Markdown content gets inserted into the page dynamically!
 - Use Markdown for flexible content (text, lists, images, links).  
 - Keep content clean & organized for better readability.  
 
-Customizing pages in Try-O-Theme is easy with **index.md** files.  
+Customizing pages in Try-O-Template is easy with **index.md** files.  
 By using **YML metadata** and **Markdown for content**, you can enhance any page dynamically!

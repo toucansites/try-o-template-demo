@@ -1,7 +1,7 @@
 ---
 type: post
-title: Theme Tweaks
-description: Learn how to customize your Try-O-Theme by changing styles and using block directives.
+title: Template Tweaks
+description: Learn how to customize your Try-O-Template by changing styles and using block directives.
 publication: 2025-03-11 00:00:01
 tags:
   - deployment
@@ -10,17 +10,17 @@ authors:
 featured: false
 ---
 
-# Theme Tweaks
+# Template Tweaks
 
 ![Cover Image](./assets/cover.jpg)
 
-This guide will help you customize **Try-O-Theme**, from adjusting styles to using **block directives** for flexible content management.
+This guide will help you customize **Try-O-Template**, from adjusting styles to using **block directives** for flexible content management.
 
 ---
 
 ## 1. Changing the Background Color
 
-To adjust background colors, add or modify these variables in **themes/default/assets/css/variables.css**:
+To adjust background colors, add or modify these variables in **templates/default/assets/css/variables.css**:
 
 ```css
 :root {
@@ -85,7 +85,7 @@ Block directives allow **reusable content components** to be easily placed insid
 
 ## 4. Testing and Applying Changes
 
-1. Regenerate the site after making theme or block directive changes:
+1. Regenerate the site after making template or block directive changes:
 
    ```bash
    toucan generate
@@ -103,4 +103,4 @@ Block directives allow **reusable content components** to be easily placed insid
 
 ## Conclusion
 
-By modifying CSS and using block directives, you can **fully customize Try-O-Theme** to match your design needs. Block directives provide **structured content elements**, while CSS changes allow for full theme control.
+By modifying CSS and using block directives, you can **fully customize Try-O-Template** to match your design needs. Block directives provide **structured content elements**, while CSS changes allow for full template control.
