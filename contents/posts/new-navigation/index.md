@@ -14,7 +14,7 @@ featured: false
 
 ![Cover Image](./assets/cover.jpg)
 
-Adding a custom page is a great way to enhance your site’s functionality by including pages like ‘Contact Us,’ ‘FAQ,’ or other static content. Follow the steps below to create a custom page and add it to the navigation menu in **Try-O-Theme**.
+Adding a custom page is a great way to enhance your site’s functionality by including pages like ‘Contact Us,’ ‘FAQ,’ or other static content. Follow the steps below to create a custom page and add it to the navigation menu in **Try-O-Template**.
 
 ---
 
@@ -66,9 +66,8 @@ Adding a custom page is a great way to enhance your site’s functionality by in
    title: "Contact Us"
    description: "Get in touch with us through this page."
    image: /images/contact-us-header.jpg
-   views: 
-      html:
-         pages.default_page
+   views:
+      html: pages.default_page
    ---
    ```
 
@@ -76,7 +75,7 @@ Adding a custom page is a great way to enhance your site’s functionality by in
    - **title**: The title of the custom page.
    - **description**: A short description or summary of the page's content.
    - **image**: A header image for the page (optional).
-   - **template**: The Mustache template used to render the page.
+   - **views.html**: The Mustache file used to render the page.
 
 ---
 
@@ -98,14 +97,23 @@ City, Country 12345
 
 ## Step 5: Create a New Template (Optional)
 
+<<<<<<< HEAD
 1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache template:
+=======
+1. If the default template **pages.default_page** does not fit your needs, create a custom Mustache file:
+>>>>>>> main
    - Navigate to **templates/default/views/pages/**.
    - Create a new Mustache file, e.g., **contact_page.mustache**.
 2. Update the **views** field in the custom page's metadata to use your new template:
 
    ```markdown
+<<<<<<< HEAD
    views: 
       html: pages.contact_page
+=======
+   views:
+    html: pages.contact_page
+>>>>>>> main
    ```
 
 ---
@@ -147,4 +155,8 @@ Once the custom page is created, regenerate the site to apply the changes:
 
 ---
 
+<<<<<<< HEAD
 This guide ensures you can create and manage custom pages with ease in **Try-O**.
+=======
+This guide ensures you can create and manage custom pages with ease in **Try-O-Template**.
+>>>>>>> main

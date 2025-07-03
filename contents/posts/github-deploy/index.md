@@ -157,7 +157,7 @@ Before you can create your site, you must have a repository for your site on Git
     ```
 
 6. Check for the deploy file (optional)
-    Check if your repository contains **deploy.yml** file location in **.github/workflow/deploy.yml**. If the file does not exist, copy a deploy.yml file to the same directory structure. Every theme contains a **deploy.yml** file.
+    Check if your repository contains **deploy.yml** file location in **.github/workflow/deploy.yml**. If the file does not exist, copy a deploy.yml file to the same directory structure. Every template contains a **deploy.yml** file.
 
 ---
 
