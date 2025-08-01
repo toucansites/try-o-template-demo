@@ -4,5 +4,5 @@
 .build
 /docs
 /dist
+/dist-live
 /dist-prev
-
