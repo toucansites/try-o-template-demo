@@ -19,15 +19,15 @@ relations:
     authors:
         references: author
         type: many
-        orderBy:
-            - key: title
-              direction: asc
+        order:
+            key: title
+            direction: asc
     tags:
         references: tag
         type: many
-        orderBy:
-            - key: title
-              direction: asc
+        order:
+            key: title
+            direction: asc
 
 queries:
     prev:
