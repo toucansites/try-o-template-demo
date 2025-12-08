@@ -7,7 +7,7 @@ tags:
   - content
 authors:
   - toucansites
-featured: false
+featured: true
 ---
 
 # Add a New Tag
@@ -28,6 +28,7 @@ Tags are essential for organizing content on your website. They help visitors fi
 ## Step 2: Create a New Tag Directory
 
 1. Create a new directory for your tag:
+
    - Name the folder based on the tag name you want to add. For example:
 
      ```bash
@@ -41,6 +42,7 @@ Tags are essential for organizing content on your website. They help visitors fi
 ## Step 3: Add an **index.md** File
 
 1. Inside the new directory (e.g., **contents/tags/my-new-tag**), create a file named **index.md**.
+
    - This file stores the metadata for the tag.
 
 2. Add the following content to the **index.md** file:
@@ -49,12 +51,13 @@ Tags are essential for organizing content on your website. They help visitors fi
    ---
    type: tag
    title: My New Tag
-   description: "A description for this tag."
+   description: 'A description for this tag.'
    order: 1
    ---
    ```
 
    **Fields Explanation**:
+
    - **type**: Always set to **tag**.
    - **title**: The display name of the tag.
    - **description**: A short description of the tag's purpose.
@@ -93,11 +96,13 @@ Once the tag is created, regenerate your site to apply the changes:
 ### Additional Notes
 
 - **Using Tags in Posts**:
+
   - To assign a tag to a post, include it in the **tags** field of the post’s **index.md** file. Example:
 
     ```markdown
     tags:
-      - my-new-tag
+
+    - my-new-tag
     ```
 
 - **Styling Tags**:

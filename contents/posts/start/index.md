@@ -5,19 +5,18 @@ description: This guide will walk you through essential tasks such as changing t
 publication: 2025-03-01 00:00:01
 tags:
   - content
+  - markdown
 authors:
   - toucansites
 featured: true
 ---
-
-# START
 
 ![Cover Image](./assets/cover.jpg)
 
 ## Disclaimer
 
 @HighlightedText {
-  Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. The Try-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
+Toucan product is currently in its beta phase, which means you might encounter issues if you attempt to custom modify the template using Toucan. While we’re actively refining and improving the experience, some features may be unstable or require manual adjustments. The Try-O template is fully operational as is! We appreciate your flexibility as we work towards a more polished version! 🚀
 }
 
 ## Introduction
@@ -32,7 +31,7 @@ This guide will walk you through essential tasks, such as changing the site logo
 
 Easily customize your site’s content by following these guides:
 
-- [Change Images](/change-images/): Learn how to replace or update images across your site.  
+- [Change Images](/change-images/): Learn how to replace or update images across your site.
 - [Add a new tag](/new-tag): Organize your posts by creating tags to improve navigation.
 - [Add a new author](/new-author): Showcase contributors by adding author profiles with bios, images, and social links.
 - [Add a new post](/new-post): Create and publish new content using Markdown while associating it with relevant tags and authors.
@@ -68,6 +67,7 @@ Thank you again for choosing Try-O-Template! If you have any questions or need f
 - Explore the examples provided in this guide.
 
 ## Give a star on Github 🙏
+
 I'm sure you know, how much it means to an online service provider to more ratings on Github. Give us a star and watch us if you like Toucan and TRY-O template. Thank you!
 
 [Toucan on Github](https://github.com/toucansites/toucan)

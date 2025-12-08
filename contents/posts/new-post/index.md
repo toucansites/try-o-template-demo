@@ -7,7 +7,7 @@ tags:
   - content
 authors:
   - toucansites
-featured: false
+featured: true
 ---
 
 # Add a New Post
@@ -28,6 +28,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
 ## Step 2: Create a New Post Directory
 
 1. Create a new directory for your post:
+
    - Name the folder based on the post title or a short identifier. For example:
 
      ```bash
@@ -41,6 +42,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
 ## Step 3: Add an **index.md** File
 
 1. Inside the new directory (e.g., **contents/posts/my-first-post**), create a file named **index.md**.
+
    - This file stores the metadata and content for the post.
 
 2. Add the following content to the **index.md** file:
@@ -48,8 +50,8 @@ Adding new posts is essential to keeping your site updated with fresh content. F
    ```markdown
    ---
    type: post
-   title: "My First Blog Post"
-   description: "This is an introduction to my first post."
+   title: 'My First Blog Post'
+   description: 'This is an introduction to my first post.'
    publication: 2023-01-26 10:00:00
    tags:
      - tech
@@ -61,6 +63,7 @@ Adding new posts is essential to keeping your site updated with fresh content. F
    ```
 
    **Fields Explanation**:
+
    - **type**: Always set to **post**.
    - **title**: The title of the post as it will appear on the site.
    - **description**: A brief description or summary of the post.
@@ -78,8 +81,8 @@ Adding new posts is essential to keeping your site updated with fresh content. F
 ```markdown
 ---
 type: post
-title: "My First Blog Post"
-description: "This is an introduction to my first post."
+title: 'My First Blog Post'
+description: 'This is an introduction to my first post.'
 publication: 2023-01-26 10:00:00
 tags:
   - tech
@@ -94,6 +97,7 @@ featured: true
 This is the content of my first blog post. It’s written in Markdown, so you can easily format headings, lists, images, and more.
 
 ### Here’s a List
+
 - Item 1
 - Item 2
 - Item 3
@@ -105,28 +109,28 @@ This is the content of my first blog post. It’s written in Markdown, so you ca
 
 1. Your new post requires a cover image, create an **assets** folder inside the post directory:
 
-  ```bash
-  mkdir contents/posts/my-first-post/assets
-  ```
+```bash
+mkdir contents/posts/my-first-post/assets
+```
 
 2. Copy your cover image to the assets folder:
 
-- The filename should be cover.* (e.g., cover.jpg, cover.png, cover.webp).
-- If there is a cover.* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
+- The filename should be cover.\* (e.g., cover.jpg, cover.png, cover.webp).
+- If there is a cover.\* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
 
 ## Step 6: Add Images (Optional)
 
 1. If your post needs to include other images, create an **assets** folder inside the post directory (if not already exist):
 
-  ```bash
-  mkdir contents/posts/my-first-post/assets
-  ```
+```bash
+mkdir contents/posts/my-first-post/assets
+```
 
 2. Place your images in the **assets** folder and reference them in your Markdown content. Example:
 
-  ```markdown
-  ![My Image](./assets/my-image.jpg)
-  ```
+```markdown
+![My Image](./assets/my-image.jpg)
+```
 
 ---
 

@@ -1,7 +1,7 @@
 {{<html}}
 {{$main}}
 
-<div class="wrapper">
+<div class="wrapper tags-page">
 
     <h1>All tags</h1>
 
@@ -11,7 +11,7 @@
     Empty.
     {{/empty(context.tags)}}
     {{^empty(context.tags)}}
-    <div class="grid grid-421">
+    <div class="grid grid-543">
     {{#context.tags}}
         {{> partials.tag}}
     {{/context.tags}}

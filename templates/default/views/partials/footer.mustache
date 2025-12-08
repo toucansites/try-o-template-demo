@@ -2,22 +2,65 @@
 
     <div class="section-divider"></div>
 
-    <b><small>Social</small></b>
-    <div class="footer-social">
-        {{#site.footer-socials}}
-            <small><a href="{{url}}" target="_blank">{{title}}</a></small>
-        {{/site.footer-socials}}
-        {{^site.footer-socials}}
-            <small>No socials links</small>
-        {{/site.footer-socials}}
+    <div class="footer-main">
+        <div class="footer-meta">
+            <div class="footer-logo">
+                <a href="{{baseUrl}}/">
+                    <h1>Try-O</h1>
+                </a>
+            </div>
+            <div>
+                {{site.description}}
+            </div>
+        </div>
+        <div class="footer-social">
+            <strong class="footer-content-title">Social</strong>
+            {{#site.footer-socials}}
+                <a href="{{url}}" target="_blank">{{title}}</a>
+            {{/site.footer-socials}}
+            {{^site.footer-socials}}
+                <small>No socials links</small>
+            {{/site.footer-socials}}
+        </div>
+        <div class="footer-social-icons">
+            <strong class="footer-content-title">Social</strong>
+            <div class="footer-social-icons-links">
+                {{#site.footer-socials}}
+                    <a aria-label="{{title}}" href="{{url}}" target="_blank">
+                        {{#icon}}
+                            {{{icon}}}
+                        {{/icon}}
+                        {{^icon}}
+                            {{#iconLocal}}
+                                <span class="footer-local-icon" style="--icon: url('{{baseUrl}}{{.}}');"></span>
+                            {{/iconLocal}}
+                            {{^iconLocal}}
+                                {{title}}
+                            {{/iconLocal}}
+                        {{/icon}}
+                    </a>
+                {{/site.footer-socials}}
+                {{^site.footer-socials}}
+                    <small>No social links</small>
+                {{/site.footer-socials}}
+            </div>
+        </div>
+        <div class="footer-contact">
+            <strong class="footer-content-title">Contact</strong>
+                <a href="mailto:info@binarybirds.com">info@binarybirds.com</a>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
     </div>
+
+        <div class="section-divider"></div>
+
 
     <div class="footer-bottom">
         <div id="footer-bottom-div1">
             <small>{{site.name}} &copy; {{generation.formats.year}}</small>
         </div>
         <div id="footer-bottom-div2">
-            <small>This site was generated using <a href="https://swift.org/" target="_blank">Swift</a> & <a href="https://github.com/toucansites/toucan" target="_blank">Toucan</a>.</small>
+            <small>This site was generated using <a href="https://toucansites.com" target="_blank">Toucan</a> & <a href="https://swift.org/" target="_blank">Swift</a>.</small>
         </div>
     </div>
     

@@ -7,7 +7,7 @@ tags:
   - content
 authors:
   - toucansites
-featured: false
+featured: true
 ---
 
 # Create a Custom Page in Navigation
@@ -21,23 +21,26 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 ## Step 1: Edit the Navigation Menu
 
 1. Open the **site.yml** file in your project directory.
+
    - This file manages the navigation menu displayed on your site.
 
 2. Add a new entry under the **navigation** section for your custom page. Example:
 
    ```markdown
    navigation:
-     - label: "About"
-       url: "/about/"
-     - label: "Authors"
-       url: "/authors/"
-     - label: "Tags"
-       url: "/tags/"
-     - label: "Contact Us"
-       url: "/contact-us/"
+
+   - label: "About"
+     url: "/about/"
+   - label: "Authors"
+     url: "/authors/"
+   - label: "Tags"
+     url: "/tags/"
+   - label: "Contact Us"
+     url: "/contact-us/"
    ```
 
    **Fields Explanation**:
+
    - **label**: The text displayed in the navigation menu.
    - **url**: The relative URL of the custom page.
 
@@ -57,21 +60,23 @@ Adding a custom page is a great way to enhance your site’s functionality by in
 ## Step 3: Add an **index.md** File
 
 1. Inside the new directory (e.g., **contents/contact-us**), create a file named **index.md**.
+
    - This file stores the metadata and content for the custom page.
 
 2. Add the following content to the **index.md** file:
 
    ```markdown
    ---
-   title: "Contact Us"
-   description: "Get in touch with us through this page."
+   title: 'Contact Us'
+   description: 'Get in touch with us through this page.'
    image: /images/contact-us-header.jpg
    views:
-      html: pages.default_page
+     html: pages.default_page
    ---
    ```
 
    **Fields Explanation**:
+
    - **title**: The title of the custom page.
    - **description**: A short description or summary of the page's content.
    - **image**: A header image for the page (optional).
@@ -89,7 +94,7 @@ Below the metadata in **index.md**, write the content of your custom page using 
 We'd love to hear from you! Please use the contact form below or email us directly at [support@example.com](mailto:support@example.com).
 
 ### Office Address
-123 Example Street  
+123 Example Street
 City, Country 12345
 ```
 
@@ -103,8 +108,8 @@ City, Country 12345
 2. Update the **views** field in the custom page's metadata to use your new template:
 
    ```markdown
-   views: 
-      html: pages.contact_page
+   views:
+   html: pages.contact_page
    ```
 
 ---
