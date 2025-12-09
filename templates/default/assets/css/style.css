@@ -85,8 +85,8 @@ img {
 
 @media screen and (max-width: 1060px) {
   .wrapper {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -98,7 +98,7 @@ img {
 }
 
 .wrapper h4 {
-  color: var(--text-color-1);
+  color: var(--text-color-3);
 }
 
 .wrapper h1 {
@@ -291,7 +291,7 @@ img.large {
 .tag-list a {
   display: inline-block;
   border-radius: 10px;
-  padding: 17px 56px;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -326,6 +326,21 @@ img.large {
   margin-top: 80px;
 }
 
+@media (max-width: 680px) {
+  .default-page,
+  .not-found-page,
+  .authors-page,
+  .author-page,
+  .tags-page,
+  .tag-page,
+  .posts-page,
+  .post-page,
+  .about-page,
+  .search-page {
+    margin-top: 60px;
+  }
+}
+
 .tag-page h4,
 .search-page h4,
 .related-articles-title {
@@ -355,6 +370,7 @@ img.large {
 
 .author-page .author-head-grid .author-data .back-link {
   margin-left: auto;
+  margin-top: 36px;
 }
 
 .author-page .author-head-grid .author-data .back-link a,
@@ -543,7 +559,7 @@ img.large {
 .author-list-item a,
 .post-link a {
   color: var(--text-color-4);
-  margin-top: 8px;
+  margin-top: 24px;
 }
 .author-list-item a:hover,
 .post-link a:hover {
@@ -593,7 +609,7 @@ img.large {
 .post-card img {
   max-width: 100%;
   width: 100%;
-  height: 180px;
+  height: 200px;
 }
 .home-page-content {
   margin-top: 80px;
@@ -624,7 +640,7 @@ img.large {
 .featured-hero .post-card {
   display: flex;
   flex-direction: row-reverse;
-  gap: 12px;
+  gap: 64px;
   margin-bottom: 90px;
 }
 
@@ -768,8 +784,8 @@ h4.all-articles-title {
 }
 
 .author-post-card img {
-  width: 225px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
 }
 
 @media (max-width: 680px) {
@@ -840,7 +856,7 @@ h4.all-articles-title {
 }
 .post-title a:hover,
 .author-post-title a:hover {
-  color: var(--link-color-hover2);
+  color: var(--text-color);
 }
 
 .featured {
@@ -962,13 +978,13 @@ a.secondary:active {
   display: flex;
   height: 35px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 48px;
   margin-bottom: 84px;
 }
 
 .shareTitle {
   margin: 0;
-  margin-right: 60px;
+  margin-right: 36px;
 }
 .shares a:hover {
   text-decoration: none;
@@ -1232,6 +1248,9 @@ a.button {
 }
 
 @media (max-width: 680px) {
+  .to-all-posts {
+    margin: 70px 0 80px;
+  }
   .to-all-posts .to-all-posts-header {
     flex-direction: column;
     align-items: flex-start;
@@ -1251,7 +1270,7 @@ a.button {
 }
 
 .related-articles-grid {
-  margin-bottom: 210px;
+  margin-bottom: 80px;
 }
 
 #search-header,

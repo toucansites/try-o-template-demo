@@ -10,8 +10,6 @@ authors:
 featured: true
 ---
 
-# Adding Extra Content
-
 ![Cover Image](./assets/cover.jpg)
 
 In **Try-O-Template**, you can add extra content to your pages using **Markdown** inside index.md files. This guide will show you how to structure your content and use custom fields.

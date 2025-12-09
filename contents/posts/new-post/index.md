@@ -10,8 +10,6 @@ authors:
 featured: true
 ---
 
-# Add a New Post
-
 ![Cover Image](./assets/cover.jpg)
 
 Adding new posts is essential to keeping your site updated with fresh content. Follow these steps to create and publish a new post in **Try-O-Template**.

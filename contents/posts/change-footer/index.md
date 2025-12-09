@@ -10,8 +10,6 @@ authors:
 featured: false
 ---
 
-# Customize the Footer
-
 ![Cover Image](./assets/cover.jpg)
 
 The footer is an important section of your website, often used to display additional navigation, social media links, or copyright information. Follow these steps to customize the footer in **Try-O**.
@@ -21,20 +19,21 @@ The footer is an important section of your website, often used to display additi
 ## Step 1: Edit the Footer Content
 
 1. Open the **site.yml** file in your project directory.
+
    - This file contains the global configuration for your site, including footer content.
 
 2. Locate the **footer-socials** section. Example:
 
    ```yaml
    footer-socials:
-     - title: "Instagram"
-       url: "https://instagram.com/"
-     - title: "Facebook"
-       url: "https://facebook.com/"
-     - title: "YouTube"
-       url: "https://youtube.com/"
-     - title: "LinkedIn"
-       url: "https://linkedin.com/"
+     - title: 'Instagram'
+       url: 'https://instagram.com/'
+     - title: 'Facebook'
+       url: 'https://facebook.com/'
+     - title: 'YouTube'
+       url: 'https://youtube.com/'
+     - title: 'LinkedIn'
+       url: 'https://linkedin.com/'
    ```
 
 3. Add, update, or remove social media links as needed:
@@ -49,10 +48,10 @@ The footer is an important section of your website, often used to display additi
 
    ```yaml
    footer-links:
-     - label: "Privacy Policy"
-       url: "/privacy-policy/"
-     - label: "Terms of Service"
-       url: "/terms-of-service/"
+     - label: 'Privacy Policy'
+       url: '/privacy-policy/'
+     - label: 'Terms of Service'
+       url: '/terms-of-service/'
    ```
 
 2. Modify the content to fit your requirements::
@@ -90,12 +89,12 @@ The footer is an important section of your website, often used to display additi
 
 Update the the "My site" copyright label in the bottom of the site by rewriting the title section in the **site.yml**:
 
-   ```yaml
-    baseUrl: "http://localhost:3000/"
-    language: "en-US"
-    title: "My site"
-    description: "Description for my site"
-   ```
+```yaml
+baseUrl: 'http://localhost:3000/'
+language: 'en-US'
+title: 'My site'
+description: 'Description for my site'
+```
 
 ---
 

@@ -10,8 +10,6 @@ authors:
 featured: true
 ---
 
-# Create a Custom Page in Navigation
-
 ![Cover Image](./assets/cover.jpg)
 
 Adding a custom page is a great way to enhance your site’s functionality by including pages like ‘Contact Us,’ ‘FAQ,’ or other static content. Follow the steps below to create a custom page and add it to the navigation menu in **Try-O-Template**.

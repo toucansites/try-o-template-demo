@@ -10,8 +10,6 @@ authors:
 featured: false
 ---
 
-# Add a New Author
-
 ![Cover Image](./assets/cover.jpg)
 
 Authors allow you to attribute content to specific contributors, enhancing credibility and providing additional context for your website. Follow these steps to add a new author in **Try-O-Template**.
@@ -28,6 +26,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
 ## Step 2: Create a New Author Directory
 
 1. Create a new directory for your author:
+
    - Name the folder based on the author's name. For example:
 
      ```bash
@@ -41,6 +40,7 @@ Authors allow you to attribute content to specific contributors, enhancing credi
 ## Step 3: Add an **index.md** File
 
 1. Inside the new directory (e.g., **contents/authors/john-doe**), create a file named **index.md**.
+
    - This file stores the author’s metadata.
 
 2. Add the following content to the **index.md** file:
@@ -49,15 +49,16 @@ Authors allow you to attribute content to specific contributors, enhancing credi
    ---
    type: author
    title: John Doe
-   description: "Tech Blogger and Writer"
+   description: 'Tech Blogger and Writer'
    image: ./assets/john-doe.jpg
    priority: 1
-   linkedin: "https://www.linkedin.com/in/johndoe/"
-   twitter: "https://twitter.com/johndoe"
+   linkedin: 'https://www.linkedin.com/in/johndoe/'
+   twitter: 'https://twitter.com/johndoe'
    ---
    ```
 
    **Fields Explanation**:
+
    - **type**: Always set to **author**.
    - **title**: The display name of the author.
    - **description**: A short bio of the author.
@@ -111,11 +112,13 @@ After creating the author, you need to regenerate your site to apply the changes
 ## Additional Notes
 
 - **Using Authors in Posts**:
+
   - To assign an author to a post, include their folder name in the **authors** field of the post’s **index.md** file.
 
     ```markdown
     authors:
-      - john-doe
+
+    - john-doe
     ```
 
 - **Styling Author Profiles**:

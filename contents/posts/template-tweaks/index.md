@@ -10,8 +10,6 @@ authors:
 featured: false
 ---
 
-# Template Tweaks
-
 ![Cover Image](./assets/cover.jpg)
 
 This guide will help you customize **Try-O-Template**, from adjusting styles to using **block directives** for flexible content management.
@@ -24,15 +22,15 @@ To adjust background colors, add or modify these variables in **templates/defaul
 
 ```css
 :root {
-   --background-color: #ffffff;
-   --background-color-accent: #cbeafb;
+  --background-color: #ffffff;
+  --background-color-accent: #cbeafb;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #000000;
-        --background-color-accent: #1a1a1a;
-    }
+  :root {
+    --background-color: #000000;
+    --background-color-accent: #1a1a1a;
+  }
 }
 ```
 
@@ -44,18 +42,18 @@ To update text colors globally, modify any of the **text-color**:
 
 ```css
 :root {
-    --text-color: #4b4b4b;
+  --text-color: #4b4b4b;
+  --text-color-1: #afafaf;
+  --text-color-2: #009be4;
+  --text-color-3: #58cc02;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #c9c9c9;
     --text-color-1: #afafaf;
     --text-color-2: #009be4;
     --text-color-3: #58cc02;
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #c9c9c9;
-        --text-color-1: #afafaf;
-        --text-color-2: #009be4;
-        --text-color-3: #58cc02;
-    }
+  }
 }
 ```
 

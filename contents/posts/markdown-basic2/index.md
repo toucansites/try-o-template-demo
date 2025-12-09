@@ -10,8 +10,6 @@ authors:
 featured: false
 ---
 
-# List, Links and Images
-
 ![Cover Image](./assets/cover.jpg)
 
 Markdown makes it easy to add lists, links and images to your documents using simple syntax.
@@ -22,7 +20,7 @@ Markdown makes it easy to add lists, links and images to your documents using si
 
 ### 1. Unordered Lists
 
-Use '-' or '*' to create unordered lists:
+Use '-' or '\*' to create unordered lists:
 
 ```markdown
 - Item 1
@@ -97,10 +95,10 @@ Similar to links, but with an exclamation mark **!** at the beginning:
 Add a title in quotes for extra context:
 
 ```markdown
-![Alt Text](https://example.com/image.jpg "Optional Title")
+![Alt Text](https://example.com/image.jpg 'Optional Title')
 ```
 
-![image](https://img.freepik.com/free-photo/transparent-colourful-autumn-leaves_23-2148239694.jpg "with title")
+![image](https://img.freepik.com/free-photo/transparent-colourful-autumn-leaves_23-2148239694.jpg 'with title')
 
 ## Code Blocks
 
@@ -118,6 +116,6 @@ Use triple backticks for multi-line code:
 
 ```markdown
 function example() {
-  console.log("Hello, Markdown!");
+console.log("Hello, Markdown!");
 }
 ```
