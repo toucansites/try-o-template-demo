@@ -7,10 +7,10 @@ html {
   font-weight: 600;
 }
 a:link {
-  color: var(--link-color);
+  color: var(--text-color-3);
 }
 a:visited {
-  color: var(--link-color-visited);
+  color: var(--text-color);
 }
 a:hover {
   color: var(--link-color-hover);

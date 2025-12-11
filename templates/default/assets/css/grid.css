@@ -156,7 +156,7 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
   column-gap: 48px;
   row-gap: 48px;
-  margin-top: 112px;
+  margin-top: 60px;
 }
 
 @media (max-width: 680px) {

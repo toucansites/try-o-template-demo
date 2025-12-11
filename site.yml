@@ -1,6 +1,6 @@
 name: 'Try-O Template Demo'
 language: 'en-US'
-description: 'A sleek, modern documentation template for Toucan SSG. It is designed to help you create clear, structured, and easy-to-maintain documentation for any type of product, service, or project.'
+description: 'Try-O is a powerful, versatile, and fully adaptable Toucan blog template—ideal for personal projects, yet simple to customize for any product, service, or other initiative. It offers a clean, well-structured foundation that makes building and maintaining your blog effortless.'
 navigation:
   - label: 'Blog'
     url: '/posts/page/1/'

@@ -8,19 +8,21 @@
   text-align: left;
 }
 #navigation > a img {
-  height: 44px;
+  height: 64px;
+  width: auto;
 }
 #navigation nav svg {
   width: 24px;
   height: 24px;
+  stroke: var(--background-color-yellow);
 }
 #navigation #primary-menu-button {
   display: none;
 }
 #navigation #primary-menu-button + label {
   position: absolute;
-  top: 16px;
-  right: 0;
+  top: 22px;
+  right: 50px;
   margin: 0;
   line-height: 0;
   padding: 12px;
@@ -32,7 +34,7 @@
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out 0s;
-  margin-top: 6px;
+  /* margin-top: 6px; */
 }
 #navigation .menu-items a {
   display: block;
@@ -81,6 +83,11 @@
   text-decoration: none;
 }
 
+.logo img {
+  margin: 0;
+  object-fit: contain;
+}
+
 .search-box {
   width: 170px;
   overflow: hidden;
@@ -108,6 +115,18 @@
   color: var(--text-color-1);
 }
 
+/* Remove blue mobile focus glow */
+.search-box #searchValue:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* iOS Safari tap highlight removal */
+.search-box #searchValue,
+.search-box {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .search-box svg {
   margin-left: 5px;
   fill: var(--text-color-1);
@@ -118,6 +137,7 @@
   #navigation {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
   }
   #navigation > a {
     grid-column: span 1;

@@ -31,8 +31,8 @@
   :root {
     --link-color: #1cb0f6;
     --link-color-visited: #1cb0f6;
-    --link-color-hover: #1cb0f6;
-    --link-color-hover2: #58cc02;
+    --link-color-hover: #fed636;
+    --link-color-hover2: #fed636;
     --link-color-active: #1cb0f6;
 
     --background-color: #0d1117;
@@ -44,6 +44,7 @@
     --text-color-1: #afafaf;
     --text-color-2: #009be4;
     --text-color-3: #58cc02;
+    --text-color-4: #58cc02;
 
     --all-button-shadow: #e8e8e8;
     --all-button-shadow-hover: #cecece;
