@@ -1,10 +1,10 @@
 ---
 type: author
-title: Toucansites
-description: Toucansites is a seasoned developer. He specializes in DevOPS & automation with interests in technical writing and content creation
+title: Gabor Lengyel
+description: Gabor Lengyel is a seasoned developer. He specializes in Android development.
 priority: 1
 web: 'https://toucansites.com/'
-x: 'tiborbodecs'
+x: 'gaborlengyel'
 facebook: 'https://facebook.com/'
 instagram: 'https://instagram.com/'
 tiktok: 'https://tiktok.com/'

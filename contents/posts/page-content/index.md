@@ -1,10 +1,11 @@
 ---
 type: post
-title: Adding Extra Content
+title: Add Content
 description: Learn how to add custom content to different pages in Try-O-Template using Markdown and frontmatter in index.md files.
 publication: 2025-03-07 00:00:01
 tags:
   - content
+  - frontmatter
 authors:
   - toucansites
 featured: true

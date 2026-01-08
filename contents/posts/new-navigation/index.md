@@ -5,6 +5,7 @@ description: This guide will walk you through how to create a custom page and ad
 publication: 2025-03-06 00:00:01
 tags:
   - content
+  - custom page
 authors:
   - toucansites
 featured: true

@@ -5,6 +5,9 @@ description: Toucan-based websites can be hosted for free using GitHub Pages. Fo
 publication: 2025-03-12 00:00:01
 tags:
   - deployment
+  - github
+  - domain
+  - hosting
 authors:
   - toucansites
 featured: false
@@ -105,7 +108,7 @@ If you want to create a site in an existing repository, skip to the [Creating yo
    ```
 
 2. Update base url
-   When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is location in **site.yml**:
+   When deploying to GitHub Pages, you need to update the baseUrl field in the configuration file, which is located in **site.yml**:
 
    ```yaml
    baseUrl: 'http://localhost:3000/'

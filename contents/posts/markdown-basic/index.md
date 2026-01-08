@@ -5,6 +5,8 @@ description: This guide will walk you through the basics of Markdown text format
 publication: 2025-03-09 00:00:01
 tags:
   - markdown
+  - headings
+  - text-styles
 authors:
   - toucansites
 featured: false

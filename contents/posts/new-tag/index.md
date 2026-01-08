@@ -5,6 +5,7 @@ description: This guide will walk you through how to add a new tag
 publication: 2025-03-03 00:00:01
 tags:
   - content
+  - tags 
 authors:
   - toucansites
 featured: true

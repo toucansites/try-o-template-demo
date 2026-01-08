@@ -4,7 +4,11 @@ title: Change Images
 description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O Template.
 publication: 2025-03-02 00:00:01
 tags:
-  - content
+  - images
+  - assets
+  - customization
+  - logo
+  - favicon
 authors:
   - toucansites
 featured: false

@@ -4,13 +4,13 @@ title: Troubleshooting
 description: Solutions to common issues with Try-O-Template and Toucan static site generator.
 publication: 2025-03-13 00:00:01
 tags:
-  - deployment
+  - errors
 authors:
   - toucansites
 featured: false
 ---
 
-![Cover Image](./assets/cover.jpg)
+![Cover Image](./assets/cover.png)
 
 This guide will help you troubleshoot common problems when working with **Try-O-Template** and **Toucan**.
 

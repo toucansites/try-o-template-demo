@@ -4,7 +4,10 @@ title: Customize the footer
 description: This guide will walk you through how to customize the footer
 publication: 2025-03-08 00:00:01
 tags:
-  - content
+  - footer
+  - footer-customization
+  - social-links
+  - copyright
 authors:
   - toucansites
 featured: false

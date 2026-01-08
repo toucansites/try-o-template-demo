@@ -5,6 +5,8 @@ description: Learn how to customize your Try-O-Template by changing styles and u
 publication: 2025-03-11 00:00:01
 tags:
   - deployment
+  - block-directives
+  - colors
 authors:
   - toucansites
 featured: false

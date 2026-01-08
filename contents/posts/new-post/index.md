@@ -5,6 +5,7 @@ description: This guide will walk you through how to add a new post.
 publication: 2025-03-05 00:00:01
 tags:
   - content
+  - new-post
 authors:
   - toucansites
 featured: true

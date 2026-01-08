@@ -5,12 +5,15 @@ description: This guide will walk you through how to use lists, links and images
 publication: 2025-03-10 00:00:01
 tags:
   - markdown
+  - lists
+  - links 
+  - images
 authors:
   - toucansites
 featured: false
 ---
 
-![Cover Image](./assets/cover.jpg)
+![Cover Image](./assets/cover.png)
 
 Markdown makes it easy to add lists, links and images to your documents using simple syntax.
 

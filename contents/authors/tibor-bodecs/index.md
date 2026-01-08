@@ -1,7 +1,7 @@
 ---
 type: author
-title: AnotherAuthor
-description: AnotherAuthor is a seasoned developer. He specializes in DevOPS & automation with interests in technical writing and content creation
+title: Tibor Bodecs
+description: Tibor Bodecs is a seasoned developer. He specializes in server-side Swift and enjoys creating fun content.
 priority: 1
 web: 'https://toucansites.com/'
 x: 'tiborbodecs'
@@ -10,5 +10,3 @@ instagram: 'https://instagram.com/'
 tiktok: 'https://tiktok.com/'
 linkedin: 'https://linkedin.com/'
 ---
-
-Lorem ipsum bla bla bla

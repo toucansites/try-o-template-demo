@@ -5,6 +5,7 @@ description: This guide will walk you through how to add a new author
 publication: 2025-03-04 00:00:01
 tags:
   - content
+  - author
 authors:
   - toucansites
 featured: false

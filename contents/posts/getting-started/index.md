@@ -1,11 +1,10 @@
 ---
 type: post
-title: START
+title: Getting started
 description: This guide will walk you through essential tasks such as changing the site logo, adding new content (tags, authors, posts), and customizing your site’s pages and footer
 publication: 2025-03-01 00:00:01
 tags:
   - content
-  - markdown
 authors:
   - toucansites
 featured: true
