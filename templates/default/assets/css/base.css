@@ -1,119 +1,147 @@
 html {
-    font-family: "Nunito",
-        system-ui,
-        'Segoe UI',
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif,
-        'Apple Color Emoji',
-        'Segoe UI Emoji';
-        
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 600;
+  font-family: 'Nunito', system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
 }
 a:link {
-    color: var(--link-color);
+  color: var(--text-color-3);
 }
 a:visited {
-    color: var(--link-color-visited);
+  color: var(--text-color);
 }
 a:hover {
-    color: var(--link-color-hover);
+  color: var(--link-color-hover);
 }
 a:active {
-    color: var(--link-color-active);
+  color: var(--link-color-active);
 }
 body {
-    background: var(--background-color);
-    color: var(--text-color);
+  background: var(--background-color);
+  color: var(--text-color);
 }
 h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 800;
+  font-size: 64px;
+  line-height: 3.75rem;
+  font-weight: 800;
 }
 h2 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-    margin-top: 1.5rem;
+  font-size: 48px;
+  line-height: 3.25rem;
+  margin-top: 1.5rem;
 }
 h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 1.5rem;
+  font-size: 32px;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 h4 {
-    font-size: 1.25rem;
-    line-height: 1.75;
+  font-size: 1.25rem;
+  line-height: 1.75;
 }
 h5 {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
 }
 h6 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 16px;
-    margin-bottom: 32px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 hr {
-    border: none;
-    border-bottom: 2px solid var(--background-color-accent);
+  border: none;
+  border-bottom: 2px solid var(--background-color-accent);
 }
 
 pre {
-    font-size: 0.8rem;
-    line-height: 1.25rem;
-    padding: 1rem;
-    margin: 2rem auto;
-    border-radius: 16px;
-    border: 3px solid var(--background-color-accent);
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  border: 0.5px solid #e3e3e3;
 }
 pre code {
-    text-shadow: none;
-    font-family: monospace;
-    display: block;
-    overflow-x: auto;
-    white-space: pre;
-    -webkit-overflow-scrolling: touch;
+  text-shadow: none;
+  font-family: monospace;
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
 }
 pre code a {
-    border-bottom: 1px dotted var(--text-color);
+  border-bottom: 1px dotted var(--text-color);
 }
 pre.snippet {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 a.source.github::before {
-    content: 'Source: ';
-    font-weight: bold;
+  content: 'Source: ';
+  font-weight: bold;
 }
 a.source.github {
-    display: block;
-    margin-top: 4px;
-    margin-left: 16px;
-    margin-bottom: 32px;
+  display: block;
+  margin-top: 4px;
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
 
 li {
-    margin-bottom: 16px;
-    line-height: 1.5rem;
+  margin-bottom: 16px;
+  line-height: 1.5rem;
 }
-p code, li code {
-    font-family: monospace;
-    font-weight: bold;
+p code,
+li code {
+  font-family: monospace;
+  font-weight: bold;
 }
-p code a, li code a {
-    font-weight: normal;
+p code a,
+li code a {
+  font-weight: normal;
 }
 li p {
-    margin: 0;
+  margin: 0;
 }
-p code a, li code a {
-    border-bottom: 1px dotted var(--text-color);
+p code a,
+li code a {
+  border-bottom: 1px dotted var(--text-color);
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    line-height: 1.85rem;
+    margin-top: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+    margin-top: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+  }
+  h5 {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+  h6 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }

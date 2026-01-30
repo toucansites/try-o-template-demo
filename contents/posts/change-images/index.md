@@ -4,13 +4,15 @@ title: Change Images
 description: Learn how to change images, including the site logo, the favicon, cover images, post images, and author images in Try-O Template.
 publication: 2025-03-02 00:00:01
 tags:
-  - content
+  - images
+  - assets
+  - customization
+  - logo
+  - favicon
 authors:
   - toucansites
 featured: false
 ---
-
-# Change Images
 
 ![Cover Image](./assets/cover.jpg)
 
@@ -20,7 +22,7 @@ Learn how to change images, including the site logo, the favicon, cover images, 
 
 ## Understanding Image Locations
 
-Different types of images are stored in different directories:  
+Different types of images are stored in different directories:
 
 - **Site Logo**: Located in **assets/images/logos/**, controls the main site logo (logo.png) and dark mode logo (logo~dark.png).
 - **Post Images**: Stored in **contents/<slug>/assets/**, includes cover images (cover.jpg, .png, .webp) and inline images.
@@ -31,13 +33,14 @@ Different types of images are stored in different directories:
 
 ## Changing the Site Logo
 
-1. **Navigate to the logo directory:**  
+1. **Navigate to the logo directory:**
 
    ```bash
    cd assets/images/logos/
    ```
 
 2. Replace the **logo.png** and **logo~dark.png** files with your custom images.
+
    - **logo.png** → Used in light mode.
    - **logo~dark.png** → Used in dark mode.
 
@@ -86,7 +89,8 @@ Favicons are the small icons that appear in browser tabs and bookmarks. To updat
    ```
 
 2. Replace or add images:
-   - **Cover image**: Name the file **cover.jpg** (or **.png**, **.webp**). If there is a cover.* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
+
+   - **Cover image**: Name the file **cover.jpg** (or **.png**, **.webp**). If there is a cover.\* image in the assets folder, Toucan will automatically use it as the post’s cover image, and it will be displayed in the lists.
    - **Inline images**: Save them in the **assets/** folder.
 
 3. Reference images inside the post:
@@ -153,23 +157,23 @@ Markdown allows you to embed images directly within your content. You can add im
 
 ### 1. Image Not Updating?
 
-✔️ **Solution**: Clear your browser cache and refresh (**Ctrl + Shift + R**).  
+✔️ **Solution**: Clear your browser cache and refresh (**Ctrl + Shift + R**).
 
 ### 2. Image Not Loading?
 
-✔️ **Solution**: Double-check file paths and ensure images are inside the correct **assets/** folder.  
+✔️ **Solution**: Double-check file paths and ensure images are inside the correct **assets/** folder.
 
 ### 3. Dark Mode Logo Not Changing?
 
-✔️ **Solution**: Make sure **logo~dark.png** is updated correctly.  
+✔️ **Solution**: Make sure **logo~dark.png** is updated correctly.
 
 ---
 
 ## Final Steps
 
-- Always **replace images with the same file names** if you want changes to apply instantly.  
-- Use **high-quality `.png` or `.webp` files** for best performance.  
-- **Regenerate the site** (`toucan generate`) after making changes.  
+- Always **replace images with the same file names** if you want changes to apply instantly.
+- Use **high-quality `.png` or `.webp` files** for best performance.
+- **Regenerate the site** (`toucan generate`) after making changes.
 
 ---
 

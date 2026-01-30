@@ -4,15 +4,13 @@ title: Troubleshooting
 description: Solutions to common issues with Try-O-Template and Toucan static site generator.
 publication: 2025-03-13 00:00:01
 tags:
-  - deployment
+  - errors
 authors:
   - toucansites
 featured: false
 ---
 
-# Troubleshooting
-
-![Cover Image](./assets/cover.jpg)
+![Cover Image](./assets/cover.png)
 
 This guide will help you troubleshoot common problems when working with **Try-O-Template** and **Toucan**.
 
@@ -26,23 +24,23 @@ This guide will help you troubleshoot common problems when working with **Try-O-
 **Cause**  
 Toucan CLI is not installed or not in your system’s **PATH**.
 
-**Solution**  
+**Solution**
 
 - Check installation: `toucan --version`
 - Install from [Toucan Documentation](https://toucansites.com/docs/)
-- Ensure Toucan is in your system’s **PATH`
+- Ensure Toucan is in your system’s \*\*PATH`
 
 ---
 
 ## 2. Images Not Displaying
 
-**Common Problems**  
+**Common Problems**
 
 - Images not in **assets** folder inside post directory.
 - Cover image is not named `cover.*` (e.g., `cover.jpg`, `cover.png`).
 - Typos in filenames or unsupported formats.
 
-**Solution**  
+**Solution**
 
 - Place all images in **assets** inside the post directory.
 - Name cover image `cover.*`. Toucan will use it automatically.
@@ -56,32 +54,32 @@ Toucan CLI is not installed or not in your system’s **PATH**.
 
 ## 3. 404 Page Not Found
 
-**Cause**  
+**Cause**
 
 - Missing content directory or **index.md** file.
 - Incorrect `url` in **site.yml**.
 - `baseUrl` not updated for deployment.
 
-**Solution**  
+**Solution**
 
 - Verify page/post folder and **index.md** exist.
 - Check `navigation` in **site.yml**.
 - Set `baseUrl` in **site.yml**:
 
   ```yaml
-  baseUrl: "https://yourusername.github.io/repository-name/"
+  baseUrl: 'https://yourusername.github.io/repository-name/'
   ```
 
 ---
 
 ## 4. Local Changes Not Updating
 
-**Cause**  
+**Cause**
 
 - **Browser cache storing an older version** of your site.
 - **Toucan site not regenerated** after content or style changes.
 
-**Solution**  
+**Solution**
 
 ### 1. Regenerate the Site
 
@@ -125,13 +123,13 @@ This ensures your latest site changes are visible in the browser.
 
 ## 5. Custom Domain Not Working
 
-**Cause**  
+**Cause**
 
 - DNS records missing or wrong.
 - Missing **CNAME** file.
 - HTTPS not enabled.
 
-**Solution**  
+**Solution**
 
 - **A records** for apex domain:
 
@@ -155,12 +153,12 @@ This ensures your latest site changes are visible in the browser.
 
 ## 6. Git Push Rejected
 
-**Cause**  
+**Cause**
 
 - SSH keys missing.
 - Local branch out of sync.
 
-**Solution**  
+**Solution**
 
 - Add SSH key to GitHub.
 - Sync branch:
@@ -176,17 +174,17 @@ This ensures your latest site changes are visible in the browser.
 
 ## 7. Broken Links After Deployment
 
-**Cause**  
+**Cause**
 
 - `baseUrl` not updated.
 - Paths work locally but break on GitHub Pages.
 
-**Solution**  
+**Solution**
 
 - Set `baseUrl` in **site.yml**:
 
   ```yaml
-  baseUrl: "https://yourusername.github.io/repository-name/"
+  baseUrl: 'https://yourusername.github.io/repository-name/'
   ```
 
 - Use absolute paths for reliability.
@@ -198,12 +196,12 @@ This ensures your latest site changes are visible in the browser.
 **Issue**  
 A new post you created is not appearing on the site.
 
-**Possible Causes**  
+**Possible Causes**
 
 - **publication date** is missing in the frontmatter.
 - Date is set in the future, so the post is not published yet.
 
-**Solution**  
+**Solution**
 
 - Ensure the post’s frontmatter includes a publication date:
 
@@ -220,12 +218,12 @@ A new post you created is not appearing on the site.
 **Issue**  
 The tag assigned to a post is not working, or the post is not grouped under the expected tag.
 
-**Possible Causes**  
+**Possible Causes**
 
 - The tag used in the post’s tags field does not exist in the contents/tags/ directory.
 - Typo in the tag folder name or in the tags field of the post.
 
-**Solution**  
+**Solution**
 
 - Check that the tag has a corresponding folder in contents/tags/ (e.g., contents/tags/tutorials/).
 - Make sure the folder contains index.md with at least:
@@ -239,6 +237,7 @@ The tag assigned to a post is not working, or the post is not grouped under the 
 
   ```markdown
   tags:
+
   - tutorials
   ```
 

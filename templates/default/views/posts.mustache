@@ -1,9 +1,9 @@
 {{<html}}
 {{$main}}
 
-<div class="wrapper">
+<div class="wrapper posts-page">
 
-    <h1>Browse all posts</h1>
+    <h1 class="page-title">Browse all posts</h1>
 
     {{#empty(iterator.items)}}
         Empty.
@@ -26,7 +26,116 @@
         </div>
     {{/empty(iterator.links)}}
 
+
+
 </div>
 
 {{/main}}
 {{/html}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const pagination = document.querySelector('.pagination');
+    if (!pagination) return;
+
+    const links = Array.from(pagination.querySelectorAll('a'));
+    if (links.length <= 1) {
+      // only one page: no need for arrows or compression
+      return;
+    }
+
+    const currentIndex = links.findIndex((a) =>
+      a.classList.contains('current-page')
+    );
+    if (currentIndex === -1) return;
+
+    const firstIndex = 0;
+    const lastIndex = links.length - 1;
+
+    // Compress pagination only when there are many pages
+    if (links.length > 9) {
+      // decide which indexes should remain visible
+      const visible = new Set();
+      visible.add(firstIndex);
+      visible.add(lastIndex);
+
+      for (let i = currentIndex - 2; i <= currentIndex + 2; i++) {
+        if (i > firstIndex && i < lastIndex) {
+          visible.add(i);
+        }
+      }
+
+      // hide all non-visible links
+      links.forEach((link, index) => {
+        if (!visible.has(index)) {
+          link.style.display = 'none';
+        }
+      });
+
+      // insert ellipsis where there is a gap between visible links
+      let lastVisibleIndex = null;
+      links.forEach((link, index) => {
+        if (link.style.display === 'none') {
+          return;
+        }
+
+        if (lastVisibleIndex !== null && index - lastVisibleIndex > 1) {
+          const ellipsis = document.createElement('span');
+          ellipsis.className = 'pagination-ellipsis';
+          ellipsis.textContent = '…';
+          pagination.insertBefore(ellipsis, link);
+        }
+
+        lastVisibleIndex = index;
+      });
+    }
+
+    // Insert prev/next arrows dynamically with SVG icons
+    const firstLink = links[firstIndex];
+    const lastLink = links[lastIndex];
+
+    const prevArrow = document.createElement('a');
+    prevArrow.className = 'pagination-arrow pagination-prev';
+    prevArrow.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+           viewBox="0 0 24 24" stroke-width="2"
+           stroke="currentColor" class="pagination-arrow-icon" width="12" height="12">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    `;
+
+    const nextArrow = document.createElement('a');
+    nextArrow.className = 'pagination-arrow pagination-next';
+    nextArrow.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+           viewBox="0 0 24 24" stroke-width="2"
+           stroke="currentColor" class="pagination-arrow-icon" width="12" height="12">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    `;
+
+    // Default hrefs
+    prevArrow.href = firstLink.href;
+    nextArrow.href = lastLink.href;
+
+    // If current page isn't the first, use the real prev link; otherwise disable
+    if (currentIndex > firstIndex) {
+      prevArrow.href = links[currentIndex - 1].href;
+    } else {
+      prevArrow.classList.add('disabled');
+    }
+
+    // If current page isn't the last, use the real next link; otherwise disable
+    if (currentIndex < lastIndex) {
+      nextArrow.href = links[currentIndex + 1].href;
+    } else {
+      nextArrow.classList.add('disabled');
+    }
+
+    // Insert arrows into the DOM
+    pagination.insertBefore(prevArrow, pagination.firstChild);
+    pagination.appendChild(nextArrow);
+  });
+</script>

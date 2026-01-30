@@ -1,0 +1,60 @@
+{{<html}}
+{{$main}}
+
+<div class="wrapper about-page">
+
+    <h1 class="page-title">About</h1>
+
+    {{& page.contents.html}}
+  
+      <div class="to-all-posts">
+      <div class="to-all-posts-header">
+          <h4 class='all-articles-title'>Most recent articles</h4>
+          <a href="{{baseUrl}}/posts/page/1">
+            See All Articles
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </a>
+      </div>
+          {{#empty(context.recent)}}
+          No recent posts yet.
+          {{/empty(context.recent)}}
+          {{^empty(context.recent)}}
+          <div class="grid grid-321 js-all-posts" >
+              {{#context.posts}}
+              {{> partials.post}}
+              {{/context.posts}}
+          </div>
+          {{/empty(context.recent)}}
+      </div>
+    
+</div>
+    
+{{/main}}
+{{/html}}
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Recent posts: keep only first 3 and change class to "grid recent-first4"
+  const recentGrid = document.querySelector('.js-all-posts');
+  if (recentGrid) {
+    const recentItems = Array.from(recentGrid.querySelectorAll('.post-card'));
+
+    if (recentItems.length > 3) {
+      const first3 = recentItems.slice(0, 3);
+
+      // Clear existing children
+      while (recentGrid.firstChild) {
+        recentGrid.removeChild(recentGrid.firstChild);
+      }
+
+      // Append only the first 3 items
+      first3.forEach((el) => recentGrid.appendChild(el));
+    }
+
+    // Set the new class on the recent grid
+    recentGrid.className = 'grid grid-321 all-first3';
+  }
+});
+</script>

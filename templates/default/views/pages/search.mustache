@@ -1,10 +1,14 @@
 {{<html}}
 {{$main}}
 
-<div class="wrapper">
+<div class="wrapper search-page">
 
-    <h1>Search</h1>
+    <h4>Search Results For &mdash;</h4>
 
+
+    <h1 id="search-header"></h1>
+
+    <p><span id="result-count"></span> Articles</p>
     {{& page.contents.html}}
 
     <p class="hiddenText" id="baseUrlValue">{{baseUrl}}</p>
@@ -24,3 +28,14 @@
 
 {{/main}}
 {{/html}}
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q') || '';
+    const header = document.getElementById('search-header');
+    if (header) {
+        header.textContent = q;
+    }
+});
+</script>

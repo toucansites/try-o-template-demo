@@ -2,44 +2,103 @@
 {{$main}}
 
 <div class="wrapper">
-
-    {{& page.contents.html}}
-
-    <h1>Featured posts</h1>
-
-    {{#empty(context.featured)}}
-    No featured posts yet.
-    {{/empty(context.featured)}}
-    {{^empty(context.featured)}}
-    <div class="grid grid-221">
-        {{#context.featured}}
-        {{> partials.post}}
-        {{/context.featured}}
-    </div>
-    {{/empty(context.featured)}}
-
-    <div class="section-divider"></div>
-
-    <h4>Most recents posts</h4>
-
-    {{#empty(context.recent)}}
-    No recent posts yet.
-    {{/empty(context.recent)}}
-    {{^empty(context.recent)}}
-    <div class="grid grid-221">
-        {{#context.recent}}
-        {{> partials.post}}
-        {{/context.recent}}
-    </div>
-    {{/empty(context.recent)}}
-
-    <div class="more-centered">
-        <a class="all-post-button" href="{{baseUrl}}/posts/page/1">All posts</a>
-    </div>
-    
+<div class="home-page-content">
+  
+      {{& page.contents.html}}
+  
+      {{#empty(context.featured)}}
+      No featured posts yet.
+      {{/empty(context.featured)}}
+  {{^empty(context.featured)}}
+  <div class="grid grid-321 js-featured-grid">
+      {{#context.featured}}
+          {{> partials.post}}
+      {{/context.featured}}
+  </div>
+  {{/empty(context.featured)}}
+  
+      <div id="home-1st-divider" class="section-divider"></div>
+  
+      <h4 class='all-articles-title'>All articles</h4>
+  
+      {{#empty(context.recent)}}
+      No recent posts yet.
+      {{/empty(context.recent)}}
+      {{^empty(context.recent)}}
+      <div class="grid grid-221 js-recent-posts">
+          {{#context.posts}}
+          {{> partials.post}}
+          {{/context.posts}}
+      </div>
+      {{/empty(context.recent)}}
+  
+      <div class="more-centered">
+          <a class="all-post-button" href="{{baseUrl}}/posts/page/1">Read more</a>
+      </div>
+  
 </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.querySelector('.js-featured-grid');
+  if (grid) {
+    const items = Array.from(grid.querySelectorAll('.post-card-wrapper'));
+    if (items.length === 0) {
+      grid.remove();
+    } else {
+      const parent = grid.parentNode;
+
+      // Only work with the first 4 items
+      const first4 = items.slice(0, 4);
+      const heroItem = first4[0];
+      const next3Items = first4.slice(1);
+
+      // 1) Hero (first item)
+      if (heroItem) {
+        const heroContainer = document.createElement('div');
+        heroContainer.className = 'featured-hero';
+        heroContainer.appendChild(heroItem);
+        parent.insertBefore(heroContainer, grid); // insert before the grid
+      }
+
+      // 2) Next 3 items (if any)
+      if (next3Items.length > 0) {
+        const next3Container = document.createElement('div');
+        next3Container.className = 'grid grid-321 featured-next3';
+
+        next3Items.forEach((el) => next3Container.appendChild(el));
+
+        parent.insertBefore(next3Container, grid.nextSibling);
+      }
+
+      // Finally remove the original featured grid container
+      grid.remove();
+    }
+  }
+
+  // Recent posts: keep only first 4 and change class to "grid recent-first4"
+  const recentGrid = document.querySelector('.js-recent-posts');
+  if (recentGrid) {
+    const recentItems = Array.from(recentGrid.querySelectorAll('.post-card-wrapper'));
+
+    if (recentItems.length > 4) {
+      const first4 = recentItems.slice(0, 4);
+
+      // Clear existing children
+      while (recentGrid.firstChild) {
+        recentGrid.removeChild(recentGrid.firstChild);
+      }
+
+      // Append only the first 4 items
+      first4.forEach((el) => recentGrid.appendChild(el));
+    }
+
+    // Set the new class on the recent grid
+    recentGrid.className = 'grid recent-first4';
+  }
+});
+</script>
 
 {{/main}}
 {{/html}}
-
-

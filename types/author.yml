@@ -6,6 +6,7 @@ properties:
     priority:
         type: int
         required: true
+        defaultValue: 0
     x:
         type: string
         required: false
